@@ -48,6 +48,8 @@ script that can be used all services listed in [minimal-services.yml](/minimal-i
 ### testing the deployment
 Finally, you can test the full deployment by issuing a simple `/chat` request using [chat_test.py](/minimal-install/chat_test.py). Make sure to adapt 'tp_url' and 'llm_service_name' if you named your service differently in [minimal-services.yml](/minimal-install/db_conf/minimal-services.yml)
 
-
+### logging
+if you wish to set up logging we recommend installing the [docker loki driver](https://grafana.com/docs/loki/latest/send-data/docker-driver/) and uncommenting the
+relevant section in [docker-compose-tp-api.yml](/minimal-install/tp_api/docker-compose-tp-api.yml) and [docker-compose-llm-test.yml](/minimal-install/services/docker-compose-llm-test.yml).
 
 [1]: If you have a helm deployment you are willing to share please open a PR.
