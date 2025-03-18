@@ -1,0 +1,14 @@
+services:
+  llm-gpt-35:
+    container_name: test-llm-gpt-35
+    env_file:
+      - ./secrets/.llm-gpt-35-tb-secrets.env
+      - ./envs/llm-gpt-35-tb.env
+    extends:
+      file: ../../docker-compose-commons.yml
+      service: llm
+
+networks:
+  tp-backend-net:
+    external: true
+    name: tp-backend-net

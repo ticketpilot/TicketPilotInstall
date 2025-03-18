@@ -1,0 +1,6 @@
+gpt-35-tb:
+  name: gpt-35-tb
+  url: http://llm-gpt-35
+  port: 8012
+  type: llm
+  access_groups: '[0]'
